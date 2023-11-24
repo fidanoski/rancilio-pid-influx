@@ -13,6 +13,7 @@ services:
       - DOCKER_INFLUXDB_INIT_PASSWORD=initialpassword
       - DOCKER_INFLUXDB_INIT_ORG=ff-rancilio-mods 
       - DOCKER_INFLUXDB_INIT_BUCKET=rancilio
+  restart: unless-stopped
 
 volumes:
     influxdb-storage:
